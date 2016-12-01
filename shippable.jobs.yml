@@ -21,7 +21,7 @@ jobs:
       - IN: man-front-end
       - IN: params-front-end-test
       - IN: trigger-front-end-test
-      - IN: cluster-demo-ecs
+      - IN: ecs-weave-shippable-demo
       - IN: alb-front-end-test
         applyTo:
           - manifest: man-front-end
@@ -59,7 +59,7 @@ jobs:
           - manifest: man-front-end
             image: img-front-end
             port: 8080
-      - IN: cluster-demo-ecs
+      - IN: ecs-weave-shippable-demo
       - TASK: managed
 
 ################################
