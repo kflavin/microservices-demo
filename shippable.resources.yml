@@ -18,14 +18,14 @@ resources:
   - name: alb-front-end-test     #required
     type: loadBalancer      #required
     pointer:
-      sourceName: "arn:aws:elasticloadbalancing:us-east-1:288971733297:targetgroup/frontendTESTTG/815ea30a8dcbaabc"
+      sourceName: "arn:aws:elasticloadbalancing:us-east-1:006027604799:targetgroup/frontendTESTTG/f3976b32744f8d79"
       method: application
 
 # AWS ALB target group for PROD environment
   - name: alb-front-end-prod     #required
     type: loadBalancer      #required
     pointer:
-      sourceName: "arn:aws:elasticloadbalancing:us-east-1:288971733297:targetgroup/frontendPRODTG/dea24e9a89ef88f4"
+      sourceName: "arn:aws:elasticloadbalancing:us-east-1:006027604799:targetgroup/frontendPRODTG/ba32e0a3fa71127a"
       method: application
 
 ################################
@@ -65,7 +65,7 @@ resources:
   - name: img-front-end
     type: image
     pointer:
-      sourceName: 288971733297.dkr.ecr.us-east-1.amazonaws.com/front-end
+      sourceName: 006027604799.dkr.ecr.us-east-1.amazonaws.com/front-end
       isPull: false
     seed:
       versionName: master.1
