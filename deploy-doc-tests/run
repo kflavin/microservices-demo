@@ -32,8 +32,6 @@ cmd = ["docker run",
        "--rm",
        envs,
        "-v/var/run/docker.sock:/var/run/docker.sock",
-       "-v#{File.expand_path("../../..", __FILE__)}:/repo/",
-       "-w/repo/",
        container_id,
        "ruby deploy-doc-tests/bin/test-documentation #{which_deployment}"
 ].join(" ")
