@@ -20,7 +20,7 @@ resources:
     type: loadBalancer      #required
     pointer:
         sourceName: "arn:aws:elasticloadbalancing:us-east-1:006027604799:targetgroup/frontendTESTTG/aa9919a7d6b94e43"
-      method: application
+      method: application # 
 
 # AWS ALB target group for PROD environment
   - name: alb-front-end-prod     #required
